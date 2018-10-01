@@ -1,18 +1,29 @@
 <html>
     <head>
+        <title>Eydean</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+        <link rel="stylesheet" href="assets/css/uikit.min.css" />
 
         <!-- UIkit JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+        <script src="assets/js/uikit.min.js"></script>
+        <script src="assets/js/uikit-icons.min.js"></script>
         
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <style>
             body{
                 font-family: "Fira Sans";
                 font-size: 16px;
+                overflow-x: hidden;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #36414c;
+                text-align: left;
+                background-color: #fff;
             }
             a{
                 color: #000;
@@ -23,7 +34,6 @@
                 text-decoration: none;
             }
             h1{
-                font-weight: 600;
                 font-size: 2.5rem;
             }
             h1, h5{
@@ -31,6 +41,7 @@
                 font-family: inherit;
                 line-height: 1.2;
                 color: inherit;
+                font-weight: 600;
             }
             p{
                 color: #8d99a6;
@@ -58,91 +69,86 @@
                 line-height: 1.5;
                 font-size: 1.25rem;
                 font-weight: 300;
-            }
-            .card{
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                min-width: 0;
-                word-wrap: break-word;
-                background-color: #fff;
-                background-clip: border-box;
-                border: 1px solid #d1d8dd;
-                border-radius: 0.25rem;
+                padding: 0 4em 0 0;
+                display: block;
             }
             img{
                 border-radius: 0.25rem;
             }
-            .section-bg-grey{
-                background-color: #d1d8ddf8;
+            .text-center{
+                text-align: center;
             }
+            .no-padding{
+                padding: 0;
+            }
+
         </style>
     </head>
-    <body>
-        <section class="top-section">
-            <div class="container">
-                <h1>Products + Services</h1>
-                <p class="lead">
-                    We are a Kathmandu based software engineering company that builds open source frameworks, applications and libraries.
+    <body class="uk-align-center">
+        <section class="uk-section uk-section-default uk-align-center uk-width-3-4">
+            <div class="uk-container">
+                <h1 class="uk-heading-primary text-center">Products + Services</h1>
+                <p class="lead text-center">
+                    We are a Kathmandu based software engineering company with thinkers, problem-solvers and challengers of the status-quo that build on top of open source ideologies and serve all.
                 </p>
-                    <div class="uk-child-width-1-3@s uk-grid-match" uk-grid>
+                <div class="uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-match uk-grid-center" uk-grid>
                         <div>
                             <a href="https://ai.eydean.com" uk-toggle>
                                 <div class="uk-card uk-card-hover uk-card-body">
-                                    <h3 class="uk-card-title">Artificial Intelligence</h3>
-                                    <p>A completely modern, easy-to-use 100% Open Source AI Engine that can cater to all of your needs.</p>
+                                    <h4 class="uk-card-title uk-text-bold">Artificial Intelligence</h4>
+                                    <p>Intelligently crafted AIaaS to step up your game.</p>
                                 </div>
                             </a>
                         </div>
                         <div>
                             <a href="https://bi.eydean.com" uk-toggle>
                                 <div class="uk-card uk-card-hover uk-card-body">
-                                    <h3 class="uk-card-title">Business Intelligence</h3>
-                                    <p>Fully featured, modern, easy-to-use 100% Open Source ERP/CMS Systems.</p>
+                                    <h3 class="uk-card-title uk-text-bold">Business Intelligence</h3>
+                                    <p>Fully featured, cloud-based modern ERP/CMS Systems.</p>
                                 </div>
                             </a>
                         </div>
                         <div>
                             <a href="https://openeydean.github.io">
                                 <div class="uk-card uk-card-hover uk-card-body">
-                                    <h3 class="uk-card-title">Community Outreach</h3>
-                                    <p>A part of the Open Source community working for the grander community.</p>
+                                    <h3 class="uk-card-title uk-text-bold">Community Outreach</h3>
+                                    <p>Part of the FOSS community working for the community.</p>
                                 </div>
                             </a>
                         </div>
                         <div>
                             <a href="https://data.eydean.com">
                                 <div class="uk-card uk-card-hover uk-card-body">
-                                    <h3 class="uk-card-title">Data Analytics</h3>
-                                    <p>State-of-the-art data analytics tools for all possible data analysis needs with easy-to-use and intuitive interface.</p>
+                                    <h3 class="uk-card-title uk-text-bold">Data <br>Analytics</h3>
+                                    <p>Meaningful Insights from your raw data within few clicks.</p>
                                 </div>
                             </a>
                         </div>
                         <div>
                             <a href="https://eco.eydean.com">
                                 <div class="uk-card uk-card-hover uk-card-body">
-                                    <h3 class="uk-card-title">Environment and Sustainability</h3>
-                                    <p>Collaboration with stakeholders to solve the problems of environment and sustainability for a better future .</p>
+                                    <h3 class="uk-card-title uk-text-bold">Sustainability Labs</h3>
+                                    <p>Collaborative efforts to solve today's challenges for a better future .</p>
                                 </div>
                             </a>
                         </div>
                         <div>
                             <a href="https://agri.eydean.com">
                                 <div class="uk-card uk-card-hover uk-card-body">
-                                    <h3 class="uk-card-title">Agriculture</h3>
-                                    <p>An effort to bring the recent advancements to Agriculture to better prepare for the growing demans of today and tomorrow.</p>
+                                    <h3 class="uk-card-title uk-text-bold">Agriculture <br> Labs</h3>
+                                    <p>Bringing tech to make sure food demands of tomorrow gets meet.</p>
                                 </div>
                             </a>
                         </div>
                     </div>
         </section>
         <section class="section-padding text-center uk-background-muted">
-            <div class="container">
-                <h3>A Community, Not Just a Company</h3>
-                <p class="lead">At Eydean, we are true believers of Open Source and actively work with communities to share our knowledge and expertise in fields wide and varied.</p>
-                <img src="IMG_20180924_162955.jpg" class="greyscale mt-5 uk-animation-kenburns" height="60%" width="60%">
-                <p class="mt-5 lead text-muted">We are always looking for great people to join our team</p>
-                <a class="btn btn-dark mt-4" href="/jobs">Apply for a Job</a>
+            <div class="container uk-padding">
+                <h3 class="uk-heading-line uk-text-center uk-text-bold" >A Community, Not Just a Company</h3>
+                <p class="lead text-center">At Eydean, we are true believers of Open Source and actively work with communities to share our knowledge and expertise in fields wide and varied.</p>
+                <img src="assets/img/IMG_20180924_162955.jpg" height="60%" width="60%">
+                <p class="lead uk-text-muted">We are always looking for great people to join our team</p>
+                <button class="uk-button">Apply for a job</button>
             </div>
         </section>
         <footer class="bg-dark pt-4">
