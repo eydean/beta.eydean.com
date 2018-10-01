@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
         <link rel="stylesheet" href="assets/css/uikit.min.css" />
 
+        <!-- Fira Font -->
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
         <!-- UIkit JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
@@ -16,7 +19,7 @@
         
         <style>
             body{
-                font-family: "Fira Sans";
+                font-family: 'Fira Sans', sans-serif;
                 font-size: 16px;
                 overflow-x: hidden;
                 font-weight: 400;
@@ -78,14 +81,14 @@
             .text-center{
                 text-align: center;
             }
-            .no-padding{
-                padding: 0;
+            .pad-reduced{
+                padding: 25;
             }
 
         </style>
     </head>
     <body class="uk-align-center">
-        <section class="uk-section uk-section-default uk-align-center uk-width-3-4">
+        <section class="uk-section uk-section-default uk-align-center uk-width-3-5">
             <div class="uk-container">
                 <h1 class="uk-heading-primary text-center">Products + Services</h1>
                 <p class="lead text-center">
@@ -94,15 +97,15 @@
                 <div class="uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-match uk-grid-center" uk-grid>
                         <div>
                             <a href="https://ai.eydean.com" uk-toggle>
-                                <div class="uk-card uk-card-hover uk-card-body">
-                                    <h4 class="uk-card-title uk-text-bold">Artificial Intelligence</h4>
+                                <div class="uk-card uk-card-hover uk-card-body pad-reduced">
+                                    <h3 class="uk-card-title uk-text-bold">Artificial Intelligence</h3>
                                     <p>Intelligently crafted AIaaS to step up your game.</p>
                                 </div>
                             </a>
                         </div>
                         <div>
                             <a href="https://bi.eydean.com" uk-toggle>
-                                <div class="uk-card uk-card-hover uk-card-body">
+                                <div class="uk-card uk-card-hover uk-card-body pad-reduced">
                                     <h3 class="uk-card-title uk-text-bold">Business Intelligence</h3>
                                     <p>Fully featured, cloud-based modern ERP/CMS Systems.</p>
                                 </div>
@@ -110,7 +113,7 @@
                         </div>
                         <div>
                             <a href="https://openeydean.github.io">
-                                <div class="uk-card uk-card-hover uk-card-body">
+                                <div class="uk-card uk-card-hover uk-card-body pad-reduced">
                                     <h3 class="uk-card-title uk-text-bold">Community Outreach</h3>
                                     <p>Part of the FOSS community working for the community.</p>
                                 </div>
@@ -118,7 +121,7 @@
                         </div>
                         <div>
                             <a href="https://data.eydean.com">
-                                <div class="uk-card uk-card-hover uk-card-body">
+                                <div class="uk-card uk-card-hover uk-card-body pad-reduced">
                                     <h3 class="uk-card-title uk-text-bold">Data <br>Analytics</h3>
                                     <p>Meaningful Insights from your raw data within few clicks.</p>
                                 </div>
@@ -126,7 +129,7 @@
                         </div>
                         <div>
                             <a href="https://eco.eydean.com">
-                                <div class="uk-card uk-card-hover uk-card-body">
+                                <div class="uk-card uk-card-hover uk-card-body pad-reduced">
                                     <h3 class="uk-card-title uk-text-bold">Sustainability Labs</h3>
                                     <p>Collaborative efforts to solve today's challenges for a better future .</p>
                                 </div>
@@ -134,7 +137,7 @@
                         </div>
                         <div>
                             <a href="https://agri.eydean.com">
-                                <div class="uk-card uk-card-hover uk-card-body">
+                                <div class="uk-card uk-card-hover uk-card-body pad-reduced">
                                     <h3 class="uk-card-title uk-text-bold">Agriculture <br> Labs</h3>
                                     <p>Bringing tech to make sure food demands of tomorrow gets meet.</p>
                                 </div>
@@ -142,13 +145,15 @@
                         </div>
                     </div>
         </section>
-        <section class="section-padding text-center uk-background-muted">
-            <div class="container uk-padding">
-                <h3 class="uk-heading-line uk-text-center uk-text-bold" >A Community, Not Just a Company</h3>
-                <p class="lead text-center">At Eydean, we are true believers of Open Source and actively work with communities to share our knowledge and expertise in fields wide and varied.</p>
-                <img src="assets/img/IMG_20180924_162955.jpg" height="60%" width="60%">
-                <p class="lead uk-text-muted">We are always looking for great people to join our team</p>
-                <button class="uk-button">Apply for a job</button>
+        <section class="text-center uk-background-muted ">
+            <div class="uk-section uk-align-center uk-width-3-5">
+                <div class="container uk-padding uk-align-center">
+                    <h3 class="uk-heading-line uk-text-center uk-text-bold " >A Community, Not Just a Company</h3>
+                    <p class="lead text-center">At Eydean, we are true believers of Open Source and actively work with communities to share our knowledge and expertise in fields wide and varied.</p>
+                    <img src="assets/img/IMG_20180924_162955.jpg" height="60%" width="60%">
+                    <p class="lead uk-text-muted">We are always looking for great people to join our team</p>
+                    <button class="uk-button">Apply for a job</button>
+                </div>
             </div>
         </section>
         <footer class="bg-dark pt-4">
