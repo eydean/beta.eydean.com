@@ -4,12 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
         <!-- UIkit CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
         <link rel="stylesheet" href="assets/css/uikit.min.css" />
 
         <!-- Fira Font -->
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
 
         <!-- UIkit JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
@@ -21,9 +25,40 @@
     </head>
 
     <body class="uk-align-center">
-        <section class="uk-section uk-section-default uk-align-center uk-width-3-5">
+
+        <div class="uk-align-center uk-width-3-5 top-section uk-padding-remove">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-padding-remove" uk-navbar>
+            <div class="uk-navbar-left logo-part">
+                    <img src="assets/img/eydean-logo.png" width="70px" class="uk-align-left"><b id="company-name">eydean</b>
+            </div>
+            
+            <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                            <li>
+                                <a href="#" class="nav-items">Services ▼</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-nav-default"><a href="https://ai.eydean.com">Artificial Intelligence</a></li>
+                                        <li class="uk-nav-default"><a href="https://bi.eydean.com">Business Intelligence</a></li>
+                                        <li class="uk-nav-default"><a href="https://idea.eydean.com">Idea Labs</a></li>
+                                        <li class="uk-nav-divider"></li>
+                                        <li class="uk-nav-default"><a href="https://community.eydean.com">Community Outreach</a></li>
+                                        <li class="uk-nav-default"><a href="https://labs.eydean.com">Eydean Labs</a></li>
+                                        <li class="uk-nav-default"><a href="https://skunkworks.eydean.com">Skunkworks</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                        <li><a href="#" class="nav-items">About</a></li>
+                        <li><a href="https://blog.eydean.com" class="nav-items">Blog</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <section class="uk-section uk-section-default uk-align-center uk-width-3-5 uk-padding-remove">
             <div class="uk-container">
-                <h1 class="uk-heading-primary text-center">Products + Services</h1>
+                <h1 class="uk-heading-primary text-center primary-text">Products + Services</h1>
                 <p class="lead text-center">
                     We are a Kathmandu based software engineering company with thinkers, problem-solvers and challengers of the status-quo that build on top of open source ideologies and serve all.
                 </p>
@@ -78,6 +113,7 @@
                         </div>
                     </div>
         </section>
+
         <section class="text-center uk-background-muted ">
             <div class="uk-section uk-align-center uk-width-3-5">
                 <div class="container uk-padding uk-align-center">
@@ -89,6 +125,7 @@
                 </div>
             </div>
         </section>
+
         <footer class="">
             <div class="container">
                 <div>

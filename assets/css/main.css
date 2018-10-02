@@ -7,6 +7,7 @@ body{
     color: #36414c;
     text-align: left;
     background-color: #fff;
+    margin-top: 0 !important;
 }
 a{
     color: #000;
@@ -16,8 +17,9 @@ a:hover{
     color: #000;
     text-decoration: none;
 }
-h1{
-    font-size: 2.5rem;
+h1.primary-text{
+    font-size: 2.5rem !important;
+    line-height: 1rem !important;
 }
 h1, h5{
     margin-bottom: 0.5rem;
@@ -45,12 +47,27 @@ p{
     margin-left: auto;
 }
 .top-section{
-    padding: 6rem 0rem;
-    text-align: center;
+    /* padding: 6rem 0rem; */
+    /* text-align: center; */
+    position: static;
+    padding: 0 !important;
+}
+.logo-part{
+    position: relative;
+    top: 1em;
+}
+#company-name{
+    position: relative;
+    bottom: 1em;
+    right: 3em;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.nav-items{
+    text-transform: none !important;
 }
 .lead {
-    line-height: 1.5;
-    font-size: 1.25rem;
+    line-height: 1.5 !important;
+    font-size: 1.15rem !important;
     font-weight: 300;
     padding: 0 4em 0 0;
     display: block;
