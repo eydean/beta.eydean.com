@@ -2694,6 +2694,7 @@ select.uk-form-width-xsmall {
   position: relative;
   box-sizing: border-box;
   transition: box-shadow 0.1s ease-in-out;
+  line-height: 1.8;
 }
 /* Sections
  ========================================================================== */
