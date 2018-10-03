@@ -97,6 +97,10 @@ img {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .border {
   border-top: 1px solid #d1d8dd;
   border-bottom: 1px solid #d1d8dd;
@@ -140,4 +144,12 @@ footer{
 
 .text-faded{
   color: #8d99a6;
+}
+
+.service-card{
+  height: 15rem;
+}
+
+.double-line{
+  line-height: 2rem;
 }
