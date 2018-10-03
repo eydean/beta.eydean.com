@@ -7,7 +7,7 @@ body {
   color: #36414c;
   text-align: left;
   background-color: #fff;
-  margin-top: 0 !important;
+  margin: 0 !important;
 }
 
 a {
@@ -119,4 +119,25 @@ img {
 
 .background-color {
   background: #36414c;
+}
+
+.white-text{
+  color: #fff;
+}
+
+footer{
+  padding-top: 3rem;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.footer-card{
+  background: inherit !important;
+}
+
+.no-btm-margin{
+  margin-bottom: 0 !important;
+}
+
+.text-faded{
+  color: #8d99a6;
 }
