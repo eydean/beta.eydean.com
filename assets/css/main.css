@@ -1,3 +1,12 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body {
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
@@ -55,8 +64,6 @@ p {
 }
 
 .top-section {
-  /* padding: 6rem 0rem; */
-  /* text-align: center; */
   position: static;
   padding: 0 !important;
 }
@@ -64,17 +71,26 @@ p {
 .logo-part {
   position: relative;
   top: 1em;
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.logo-part > img {
+  margin: 1rem !important;
 }
 
 #company-name {
+  line-height: 50px;
   position: relative;
-  bottom: 1em;
-  right: 3em;
+  right: 1.5rem;
   font-size: 30px;
-  padding-left: 50px;
-  padding-top: 25px;
-  font-family: 'Didact Gothic', sans-serif;
-  color: #000;
 }
 
 .nav-items {
@@ -85,7 +101,7 @@ p {
   line-height: 1.5 !important;
   font-size: 1.15rem !important;
   font-weight: 300;
-  padding: 0 4em 0 0;
+  /* padding: 0 4em 0 0; */
   display: block;
 }
 
@@ -108,6 +124,10 @@ img {
 
 .padder {
   padding-top: 15px;
+}
+
+.spaced-letter{
+  letter-spacing: 0.15rem;
 }
 
 .pad-reduced {
@@ -147,9 +167,6 @@ footer{
 }
 
 .service-card{
-  height: 15rem;
-}
-
-.double-line{
-  line-height: 2rem;
+  margin-bottom: 2rem;
+  text-overflow: ellipsis;
 }
