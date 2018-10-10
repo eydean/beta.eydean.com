@@ -19,6 +19,12 @@ body {
   margin: 0 !important;
 }
 
+.logo {
+  height: 50px;
+  position: relative;
+  left: 1rem;
+}
+
 a {
   color: #000;
 }
