@@ -1,20 +1,16 @@
 <html>
+
 <head>
-  <title>Eydean</title>
+  <title>eydean</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
-
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
   <link rel="stylesheet" href="assets/css/uikit.min.css" />
-
   <!-- Fira Font -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-
-
   <!-- UIkit JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
@@ -26,13 +22,54 @@
 
 <body class="uk-align-center">
 
-  <div class="uk-align-center uk-width-3-5 top-section uk-padding-remove">
+  <div class="uk-align-center uk-width-3-5@m top-section uk-padding-remove uk-margin-remove@m">
     <nav class="uk-navbar-container uk-navbar-transparent uk-padding-remove" uk-navbar>
       <a href="index.html" class="uk-navbar-left logo-part">
-        <img src="assets/img/eydean-logo.png" width="50px" class="uk-align-left"><b id="company-name">eydean</b>
+        <span>
+          <!-- <img src="assets/img/eydean-logo.png" width="50px" class="uk-align-left"> -->
+          <!-- <b id="company-name">eydean</b> -->
+          <img src="assets/img/Eydean-brand.png" height="50px" class="uk-align-left logo">
+        </span>
       </a>
 
-      <div class="uk-navbar-right">
+      <div class="uk-navbar-right uk-hidden@m">
+        <a class="uk-navbar-toggle" href="#" uk-toggle="target: #offcanvas-nav">
+          <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+        </a>
+      </div>
+
+      <div id="offcanvas-nav" uk-offcanvas="overlay: true; mode: reveal; flip: true">
+        <div class="uk-offcanvas-bar">
+          <ul class="uk-nav uk-nav-default">
+            <li class="uk-parent uk-active">
+              <a href="#">Services</a>
+              <ul class="uk-nav-sub">
+                <li><a href="#">Artificial Intelligence</a></li>
+                <li><a href="#">Business Intelligence</a></li>
+                <li><a href="#">Idea Labs</a></li>
+                <hr>
+                <li><a href="#">Community Outreach</a></li>
+                <li><a href="#">Eydean Labs</a></li>
+                <li><a href="#">Skunkworks</a></li>
+              </ul>
+            </li>
+            <li class="uk-parent uk-active">
+              <a href="#">About</a>
+              <ul class="uk-nav-sub">
+                <li><a href="#">Values</a></li>
+                <li><a href="#">Playbook</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Podcast</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="uk-default uk-parent"><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="uk-navbar-right uk-nav uk-visible@m">
         <ul class="uk-navbar-nav">
           <li>
             <a href="#" class="nav-items">Services ▼</a>
@@ -44,23 +81,25 @@
                 <li class="uk-nav-divider"></li>
                 <li class="uk-nav-default"><a href="https://community.eydean.com">Community Outreach</a></li>
                 <li class="uk-nav-default"><a href="https://labs.eydean.com">Eydean Labs</a></li>
-                <li class="uk-nav-default"><a href="https://skunkworks.eydean.com">Skunkworks</a></li> </ul>
+                <li class="uk-nav-default"><a href="https://skunkworks.eydean.com">Skunkworks</a></li>
+              </ul>
             </div>
           </li>
           <li>
             <a href="#" class="nav-items">About ▼</a>
             <div class="uk-navbar-dropdown">
               <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li class="uk-nav-default"><a href="https://ai.eydean.com">Team</a></li>
-                <li class="uk-nav-default"><a href="https://bi.eydean.com">Jobs</a></li>
-                <li class="uk-nav-default"><a href="https://idea.eydean.com">Inspiration</a></li>
-                <li class="uk-nav-default"><a href="https://community.eydean.com">Story</a></li>
-                <li class="uk-nav-default"><a href="https://labs.eydean.com">Podcast</a></li>
-                <li class="uk-nav-default"><a href="https://skunkworks.eydean.com">Contact</a></li> </ul>
+                <li class="uk-nav-default"><a href="https://team.eydean.com">Values</a></li>
+                <li class="uk-nav-default"><a href="https://eydean.com/jobs.html">Playbook</a></li>
+                <li class="uk-nav-default"><a href="https://inspire.eydean.com">Team</a></li>
+                <li class="uk-nav-default"><a href="https://story.eydean.com">Jobs</a></li>
+                <li class="uk-nav-default"><a href="https://sound.eydean.com">Podcast</a></li>
+                <li class="uk-nav-default"><a href="mailto://info@eydean.com">Contact</a></li>
+              </ul>
             </div>
           </li>
           <li><a href="https://blog.eydean.com" class="nav-items">Blog</a></li>
-          </ul>
+        </ul>
       </div>
     </nav>
   </div>
@@ -105,7 +144,7 @@
                       <br>Content licensed under
                       <a href="https://creativecommons.org/licenses/by-sa/3.0/" class="text-faded underline" target="_blank">
                       CC-BY-SA 3.0</a>.<br>Read the <a href="https://eydean.com/terms" class="text-faded underline">terms of use</a>.
-                  </div>    
+                  </div>
                 </div>
             </div>
             <div class="uk-width-1-4@m">
@@ -133,7 +172,7 @@
                       <li><a href="mailto://info@eydean.com" class="text-faded">Contact</a></li>
                     </ul>
                 </div>
-            </div>    
+            </div>
           </div>
           </div>
         </footer>
