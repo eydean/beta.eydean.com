@@ -103,7 +103,7 @@ p {
 .nav-items {
   text-transform: none !important;
   color: #292929 !important;
-  font-size: 13pt !important;  
+  font-size: 13pt !important;
 }
 
 .lead {
@@ -178,6 +178,7 @@ footer{
 .service-card{
   margin-bottom: 2rem;
   text-overflow: ellipsis;
+  /* box-shadow: 3px 3px 30px #afafaf; */
 }
 
 .container-internal{
