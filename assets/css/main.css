@@ -184,3 +184,11 @@ footer{
 .container-internal{
   background-color: #f5f5f5;
 }
+
+#community-paragraph{
+  /* font-size: 0.80rem; */
+}
+
+.image-partner{
+  padding-right: 2rem;
+}
