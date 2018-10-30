@@ -1,3 +1,9 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html,body
 {
     width: 100%;
@@ -8,7 +14,7 @@ html,body
 }
 
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   overflow-x: hidden;
   font-weight: 400;
@@ -36,11 +42,6 @@ a:hover {
   text-decoration: none;
 }
 
-h1.primary-text {
-  font-size: 2.5rem !important;
-  line-height: 1rem !important;
-}
-
 h1, h5 {
   margin-bottom: 0.5rem;
   font-family: inherit;
@@ -50,7 +51,6 @@ h1, h5 {
 }
 
 p {
-  color: #8d99a6;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -158,9 +158,21 @@ img {
   color: #fff;
 }
 
+.primary-text{
+  color: #333;
+}
+
+.secondary-text{
+  color: #7f7f7f;
+}
+
+.teritiary-text{
+  color: #d3d3d3;
+}
+
 footer{
   padding-top: 3rem;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .footer-card{
@@ -181,19 +193,33 @@ footer{
 
 .service-card{
   align-content: center;
-  /* padding-left: 1rem; */
-  /* margin: 1rem !important; */
-  text-overflow: ellipsis;
   display: flex;
-  /* padding-top: 2rem; */
-  /* height: 200px; */
-  /* width: 450px; */
-  /* height: fit-content; */
-  /* box-shadow: 3px 3px 30px #afafaf; */
+  height: 12rem;
+  position: relative;
+}
+
+.uk-card-title {
+  font-size: 1.30rem;
 }
 
 .card-internal{
   display: inline-block;
+}
+
+.card-internal>a{
+  position: absolute;
+  bottom: 1rem;
+}
+
+.card-text{
+  line-height: 1.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card-text>p{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 #card-space{
@@ -212,3 +238,39 @@ footer{
 .colored-text{
   color: #3a5eab;
 }
+
+.switcher{
+  display: block;
+  float: right;
+}
+
+#toolkit-section{
+  margin-top: 10rem;
+}
+
+#toolkit-header{
+  letter-spacing: 0.2rem;
+}
+
+#toolkit-section-text{
+  line-height: 2.5rem;
+}
+
+#toolkit_image{
+  max-height: 30rem;
+}
+
+
+@media screen and (max-width: 640px) {
+  #toolkit-header {
+    letter-spacing: 0;
+  }
+
+  .card-text>p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 10rem;
+  }
+
+}
+
