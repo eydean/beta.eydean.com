@@ -11,6 +11,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    max-width: 1920px;
 }
 
 body {
@@ -260,10 +261,21 @@ footer{
   max-height: 30rem;
 }
 
+#showcase-section{
+  margin-top: 10rem;
+}
+
+#showcase-header{
+  letter-spacing: 0.2rem;
+}
 
 @media screen and (max-width: 640px) {
   #toolkit-header {
     letter-spacing: 0;
+  }
+
+  #showcase-header{
+    letter-spacing: 0.2rem;
   }
 
   .card-text>p{
