@@ -11,7 +11,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    max-width: 1920px;
+    /* max-width: 1920px; */
 }
 
 body {
@@ -249,11 +249,15 @@ footer{
   margin-top: 10rem;
 }
 
+#toolkit-section>div>div{
+ max-width: 1040px;
+}
+
 #toolkit-header{
   letter-spacing: 0.2rem;
 }
 
-#toolkit-section-text{
+.section-text{
   line-height: 2.5rem;
 }
 
@@ -265,9 +269,15 @@ footer{
   margin-top: 10rem;
 }
 
+
+#showcase-section>div{
+  max-width: 1040px;
+ }
+
 #showcase-header{
   letter-spacing: 0.2rem;
 }
+
 
 @media screen and (max-width: 640px) {
   #toolkit-header {
@@ -283,6 +293,6 @@ footer{
     text-overflow: ellipsis;
     max-height: 10rem;
   }
-
 }
+
 
