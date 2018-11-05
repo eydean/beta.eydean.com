@@ -278,6 +278,28 @@ footer{
   letter-spacing: 0.2rem;
 }
 
+#features-section{
+  margin-top: 10rem;
+}
+
+
+#features-section>div{
+  max-width: 1040px;
+ }
+
+#features-section>div>div>div{
+  line-height: 2rem;
+}
+
+ h3.feature{
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 2rem !important;
+ }
+
+ .feature a{
+   color: #333 !important;
+ }
 
 @media screen and (max-width: 640px) {
   #toolkit-header {
