@@ -301,6 +301,10 @@ footer{
    color: #333 !important;
  }
 
+ .top-image{
+   height: 400px;
+ }
+
 @media screen and (max-width: 640px) {
   #toolkit-header {
     letter-spacing: 0;

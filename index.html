@@ -3,20 +3,17 @@
   <title>eydean</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="eydean">
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
-  <link rel="stylesheet" href="assets/css/uikit.min.css" />
-  <!-- Fira Font -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-
+  <!-- <link rel="stylesheet" href="assets/css/uikit.min.css" /> -->
+  <link rel="stylesheet" href="assets/css/main.css">
   <!-- UIkit JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
-  <script src="assets/js/uikit.min.js"></script>
-  <script src="assets/js/uikit-icons.min.js"></script>
-
-  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- <script src="assets/js/uikit.min.js"></script>
+  <script src="assets/js/uikit-icons.min.js"></script> -->
   <script src="assets/js/main.js"></script>
 </head>
 
@@ -27,7 +24,7 @@
     <nav class="uk-navbar-container uk-navbar-transparent uk-padding-remove" uk-navbar>
       <a href="index.html" class="uk-navbar-left logo-part">
         <span>
-          <img src="assets/img/Eydean-brand.svg" height="50px" class="uk-align-left logo">
+          <img src="assets/img/Eydean-brand.svg" height="50px" class="uk-align-left logo" alt="eydean">
         </span>
       </a>
 
@@ -37,7 +34,7 @@
         </a>
       </div>
 
-      <div id="offcanvas-nav" uk-offcanvas="overlay: true; mode: reveal; flip: true">
+      <div id="offcanvas-nav" uk-offcanvas="overlay: true; mode: reveal; flip: true;">
         <div class="uk-offcanvas-bar">
           <ul class="uk-nav uk-nav-default">
             <li class="uk-parent uk-active">
@@ -105,6 +102,63 @@
   <!--end of header-->
 
   <!--begin of contents-->
+  <section class="uk-padding uk-padding-small@m uk-padding-large@l uk-align-center uk-width-4-5@m " uk-slideshow="animation: slide; autoplay: true; autoplay-interval:3000; max-height: 800; min-height: 600">
+    <div class="uk-position-relative uk-visible-toggle ">
+    <ul class="uk-slideshow-items">
+      <li>
+          <div class="uk-flex-middle" uk-grid>
+              <div class="uk-width-1-2@m">
+                  <h3 class="primary-text">The Next Era of Business Applications</h3>
+                  <p>Unbridle your organization’s potential by breaking down raw data to connect customers, products, people, and operations.</p>
+              </div>
+              <div class="uk-width-1-2@m">
+                  <img src="assets/img/NextEra.png" alt="Image" class="top-image@m">
+              </div>
+          </div>
+        </li>
+
+        <li>
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-1-2@m">
+                    <h3 class="primary-text">Discover Immediate, Actionable Insights</h3>
+                    <p>Benefit from out-of-the-box insights with Eydean AI applications, and customize them to address different scenarios.</p>
+                </div>
+                <div class="uk-width-1-2@m">
+                    <img src="assets/img/Insight.png" alt="Image" class="top-image@m">
+                </div>
+            </div>
+          </li>
+
+        <li>
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-1-2@m">
+                    <h3 class="primary-text">Inspiring Communities across Borders</h3>
+                    <p>Bringing together an inspiring community across borders and ages to form a better future with Open Technologies and ICT.</p>
+                </div>
+                <div class="uk-width-1-2@m">
+                    <img src="assets/img/AcrossBorders.png" alt="Image" class="top-image@m">
+                </div>
+            </div>
+          </li>
+
+        <li>
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-1-2@m">
+                    <h3 class="primary-text">Innovate with Proactive Services</h3>
+                    <p>Empower people across your organization to discover predictive insights, take informed actions, and communicate with customers leveraging the power of artificial intelligence (AI).</p>
+                </div>
+                <div class="uk-width-1-2@m">
+                    <img src="assets/img/Innovative.png" alt="Image" class="top-image@m">
+                </div>
+            </div>
+          </li>
+    </ul>
+  
+    <!-- <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a> -->
+  </div>
+  </section>
+
   <section class="uk-section uk-section-default uk-align-center uk-width-4-5@m uk-padding-remove" id="card-section">
     <div class="uk-container container-internal">
       <h1 class="uk-heading-primary text-center padder spaced-letter primary-text">Products + Services</h1>
@@ -231,11 +285,6 @@
         <h3 class="uk-text-center uk-text-bold uk-text-uppercase primary-text">
           <span id="showcase-header">Products Showcase</span>
         </h3> 
-          <p class="uk-text-left uk-text-center@m  secondary-text section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur augue ac leo bibendum accumsan. Aenean in purus tristique, 
-            accumsan ligula sed, fringilla neque. Ut eget dapibus enim. Suspendisse rhoncus auctor porta. Etiam consequat, nulla eu pharetra tincidunt, 
-            mauris ipsum feugiat lorem, ut feugiat metus eros at ipsum. Curabitur sem nunc, malesuada eu pulvinar id, mattis sed nibh. Donec non elit ultricies 
-            felis tempor lobortis. Integer bibendum, lacus ut consequat dapibus, nulla odio mollis est, sit amet egestas massa orci eu lorem. 
-          </p> 
       </div>
       
       <div uk-grid>
